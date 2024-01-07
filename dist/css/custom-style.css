@@ -62,7 +62,7 @@
 
 body {
     font-family: 'Vazir', sans-serif !important;
-    background-image: url(../img/blue-moon.jpg) !important; 
+    /* background-image: url(../img/blue-moon.jpg) ;  */
   position:unset;
 }
 
@@ -70,7 +70,9 @@ body {
     direction:ltr;
 }
 
-
+.color-table {
+    background-color: antiquewhite !important;
+}
 ul {
     padding-inline-start: 0px;
 }
