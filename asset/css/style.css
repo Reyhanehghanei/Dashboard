@@ -1,0 +1,395 @@
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Bold.woff2') format('woff2'),
+        url('../fonts/Vazir-Bold.woff') format('woff'),
+        url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Light.woff2') format('woff2'),
+        url('../fonts/Vazir-Light.woff') format('woff'),
+        url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Medium.woff2') format('woff2'),
+        url('../fonts/Vazir-Medium.woff') format('woff'),
+        url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Thin.woff2') format('woff2'),
+        url('../fonts/Vazir-Thin.woff') format('woff'),
+        url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Black.woff2') format('woff2'),
+        url('../fonts/Vazir-Black.woff') format('woff'),
+        url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+
+
+body {
+    font-family: 'Vazir', sans-serif !important;
+    /* background-image: url(../img/blue-moon.jpg) ;  */
+    position: unset;
+}
+
+.nav-style {
+    display: flex !important;
+    flex-direction: row-reverse;
+    justify-content: space-between !important;
+}
+
+.navbar-expand .navbar-nav {
+    flex-direction: row-reverse !important;
+}
+
+.nav {
+    text-align: right;
+
+}
+
+nav {
+    width: 79rem !important;
+}
+
+/* vazife */
+.vazife {
+    background-color: #646464;
+}
+
+.vazife h1 {
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 50%;
+
+}
+
+.vazife .h1-col {
+    direction: ltr;
+    font-size: -4px;
+    margin-top: 10px;
+    margin-left: 55rem;
+
+    /* border: 1px solid rebeccapurple; */
+}
+
+.vazife .h1-col h1 {
+    font-size: 30px;
+    color: mintcream;
+}
+
+.vazife .span-karMan {
+    direction: ltr;
+    font-size: -4px;
+    margin-top: 10px;
+    margin-left: 72rem;
+    border-radius: 5px 5px 0 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #c2c7d0;
+    cursor: pointer;
+}
+
+.vazife .span-karMan span {
+    margin-left: 16px;
+    padding: 9px;
+    color: aliceblue;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.vazife .span-karMan span:hover {
+    color: #646464;
+}
+
+.Create-task {
+    justify-content: center;
+}
+
+.Create-task .col-md-2 {
+    margin-left: 60rem;
+}
+
+.Create-task .col-md-2 .task {
+    margin-top: 10px;
+    border-radius: 4px;
+    border-color: cadetblue;
+    padding: 4px;
+    transition: all 0.5s ease;
+
+}
+
+.Create-task .col-md-2 .task:hover {
+    background-color: #c1d8d8;
+}
+
+.text-new {
+    text-align: right;
+    margin-left: -9rem;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.check-taxt {
+    border: 1px solid gainsboro;
+    margin-left: 6rem;
+    margin-top: 10px;
+    border-radius: 3px;
+    text-align: right;
+    padding: 6px;
+    background-color: #f2f4f6;
+    transition: all 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+
+.check-taxt:hover {
+    background-color: #c1d8d8;
+}
+
+/* box */
+.card-title {
+    text-align: right;
+}
+
+.text-box {
+    margin-top: -156px;
+    margin-left: -50px;
+}
+
+.box-input input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #c1d8d8;
+    background: unset;
+    outline: none;
+    text-align: right;
+}
+
+.text-box {
+    transition: all 2s ease-in-out;
+}
+
+.text-right-m {
+    color: red;
+    font-size: 12px;
+}
+
+.box-c {
+    display: none;
+}
+
+.border-dasht {
+    border: 1px dashed gray;
+}
+
+.Add {
+    background: unset;
+    border: 0;
+    border-bottom: 1px dashed gray;
+    outline: none;
+    cursor: pointer;
+    color: grey;
+}
+
+.Add:focus {
+    outline: none;
+}
+
+#user-t {
+    display: none;
+}
+
+.Creation {
+    padding: 13px 13px 0 10px;
+}
+
+.Creation input {
+    padding: 3px 16px 3px 16px;
+    border-radius: 6px;
+    background-color: rgb(250, 250, 250);
+    color: #646464;
+    cursor: pointer;
+}
+
+.opt-out {
+    background: unset;
+    border: 0;
+    margin-top: 4px;
+}
+
+.opt-out:focus {
+    outline: none;
+}
+
+.reminder-d {
+    left: 34rem;
+    top: -6rem;
+    position: absolute;
+    text-align: right;
+}
+
+
+.btn-karbar {
+    margin-top: 15px;
+    border: 0;
+    background: unset;
+}
+
+.reminder-d {
+    display: none;
+}
+
+.poroje {
+    top: -6rem;
+    left: 47rem;
+    display: none;
+}
+
+.btn-on {
+    border: 0;
+    position: absolute;
+    right: 13rem;
+    top: 4px;
+    padding: 5px;
+    background: unset;
+}
+
+.time {
+    left: 30rem;
+    top: -6rem;
+    display: none;
+}
+
+.todo-time {
+    position: relative;
+    top: -7.6rem;
+    left: 28rem;
+    display: none;
+}
+
+.todo-time input {
+    background-color: unset;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+
+.todo-time input:focus {
+    outline: none;
+}
+
+#Result {
+    font-size: 11px;
+    position: absolute;
+    right: 18.5rem;
+    top: 75px;
+    color: red;
+}
+
+#Rsult {
+    font-size: 11px;
+    position: relative;
+    right: 0rem;
+    top: 10px;
+    color: red;
+}
+
+.edit-mood {
+    background-color: gray;
+}
+
+.date-tmime {
+    width: 8rem;
+    margin-top: 14px;
+}
+
+header {
+    background-color: #4A5867;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+header h1,
+header p {
+    color: #fff;
+    text-align: center;
+}
+
+input {
+    display: table;
+    margin: auto;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+.version-v {
+    display: none;
+}
+
+/* end-page */
+/* end vazife-page*/

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap wysihtml5 - text editor -->
+    <!-- Google Font: Source Sans Pro -->
+    <!-- bootstrap rtl -->
+    <!-- template rtl version -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/adminlte.min.css">
+    <link rel="stylesheet" href="asset/css/custom-style.css">
+    <link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="src/ha-datetimepicker.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom nav-style">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="index3.html" class="nav-link">خانه</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">تماس</a>
+            </li>
+        </ul>
+
+        <!-- SEARCH FORM -->
+        <form class="form-inline ml-3">
+            <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="جستجو" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav mr-auto">
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fa fa-comments-o"></i>
+                    <span class="badge badge-danger navbar-badge">3</span>
+                </a>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+
+            <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+                        class="fa fa-th-large"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- sidebar -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="min-height: 624.4px;">
+        <!-- Brand Logo -->
+
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div>
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="info">
+                        <a href="#" class="d-block">داشبورد</a>
+                        <a href="#" class="d-block">داشبورد</a>
+                    </div>
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-file"></i>
+                                <p class="d-block">وظایف</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-file"></i>
+                                <p>Create new board</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+    <!-- end-sidebar -->
+    <main>
+        <div class="vazife">
+            <div class="row">
+                <div class="col-md-3 h1-col">
+                    <h1>وظایف</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 span-karMan">
+                    <span>کار های من </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row Create-task">
+                <div class="col-md-2">
+                    <button id="btn-vazife" class="task" onclick=" show()">
+                        ایجاد وظیفه <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-new mt-3">وظایف جدید</div>
+            </div>
+            <div class="todo-list mt-3">
+                <!-- <ul class = "task-r">
+                    <li class="col-md-10 ">
+                                <div class="row">
+                            <div class="col-md-11 mt-3 check-taxt">
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                                 <span><i class="fa fa-th-large"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    </ul> -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-12"></div>
+        </div>
+        <!--box  -->
+        <form action="" class="box-item">
+            <div class="container box-c" id="show">
+                <div class="col-md-9 ">
+                    <div class="card text-box MyP">
+                        <div class="card-header">
+                            <h3 class="card-title">ایجاد وظیفه</h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool">
+                                    <i class="fa fa-minus"></i></button>
+                                <button type="button" onclick=" show()" class="btn btn-tool">
+                                    <i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body text-right-m text-right">
+                            عنوان فعالیت
+                        </div>
+                        <div class="col-md-12 box-input ">
+                            <input type="text" class="w-100 todo-input" placeholder="عنوان فعالیت را وارد کنید">
+                            <input type="text" name="" id="user-t" class="w-100 mt-2 "
+                                placeholder="درج توضیحات مربوط به این فعالیت">
+                            <div class="text-right-m text-right mt-2">وارد کردن این فیلد الزامی است</div>
+                        </div>
+                        <div class="card-footer ">
+                            <div class="row">
+                                <div
+                                    class="col-md-12 border-dasht p-4 d-flex justify-content-center align-items-center">
+                                    <div class="col-md-2"><button type="button" class="Add p-1" id="user-id">افزودن
+                                            توضیحات</button>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center">
+                                        <fieldset>
+                                            <input type="text"  id="date" name="test" value="2/25/2016"
+                                                data-ha-datetimepicker="#date" data-ha-dp-forcesettime="true"
+                                                data-ha-dp-resultformat="{day} {month} {year}"
+                                                class="date-tmime todo-input" />
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-2"><button id="add-reminder" type="button" class="Add p-1">مسعوول
+                                            انجام<i class="fa fa-bell-o"></i></button> </div>
+                                    <h3 id="Result"></h3>
+                            
+                                    <div class="col-md-2"><button type="button" class="Add p-1 poroje-d">دسته بندی
+                                            پروژه</button>
+                                        <h3 id="Rsult"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 Creation">
+                                    <input type="submit" value="ایجاد" id="s-btn">
+                                </div>
+                                <div class="col-md-1 Creation">
+                                    <button class="opt-out">انصراف</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- end-box -->
+        <div class="col-md-2 reminder-d">
+            <div class="card reminder">
+                <div class="card-body">
+                    <button type="button" class="btn-on">
+                        <i class="fa fa-times"></i></button>
+                    <select id="MySelect" class="form-control mt-3 text-right todo-input" onchange="ChangeText();">
+                        <option class="select-box" value="صادق">صادق
+                        <option value="الناز">الناز
+                        <option value="علیرضا">علیرضا
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 poroje">
+            <div class="card reminder">
+                <div class="card-body">
+                    <button type="button" class="btn-on" id="btn-one">
+                        <i class="fa fa-times"></i></button>
+                    <div class="col-md-12">
+                        <select id="MSelect" class="form-control mt-3 text-right todo-input" onchange="Text();">
+                            <option class="select-box" value="صادق">صادق
+                            <option value="الناز">الناز
+                            <option value="علیرضا">علیرضا
+                        </select>
+                        <h3 id="Rsult"></h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="src/ha-solardate.js"></script>
+<script src="src/ha-lunardate.js"></script>
+<script src="src/ha-datetimepicker.js"></script>
+
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Morris.js charts -->
+
+<!-- Slimscroll -->
+<!-- vazife -->
+<script src="asset/js/vazife.js"></script>
+<!-- end-vazife -->
+
+<!--jquery  -->
+
+<script src="asset/js/jquery-3.6.0.min.js"></script>
+
+<!-- end jquery -->
+<!-- todo -->
+<script src="./asset/js/todo.js"></script>
+<!-- end-todo -->
+</body>
+
+</html>
